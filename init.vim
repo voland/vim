@@ -46,7 +46,7 @@ nnoremap <silent> <leader> :WhichKey ';'<CR>
 " " Only run linters named in ale_linters settings.
 " let g:ale_linters_explicit = 1
 
-source coc.vim
+source ~/.vim/coc.vim
 "disable linters for c if coc is used
 "##############################################################
 "#  AirLine                                                   #
@@ -95,5 +95,5 @@ map <space> <Plug>(easymotion-prefix)
 " imap <c-space> <Plug>(asyncomplete_force_refresh)
 
 
-source other.vim
-source omnisharp.vim
+source ~/.vim/other.vim
+source ~/.vim/omnisharp.vim
