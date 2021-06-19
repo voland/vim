@@ -1,0 +1,7 @@
+{
+"diagnostic.displayByAle": true,
+"omnisharp.version": "v1.37.3",
+"omnisharp.trace.server": "information",
+"omnisharp.debug.server": true,
+"coc.preferences.useQuickfixForLocations":true
+}

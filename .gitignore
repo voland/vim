@@ -1,0 +1,6 @@
+
+plugged/*
+plugged-back/*
+coc.nvim/
+
+plugin/a.vim
