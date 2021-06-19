@@ -69,7 +69,7 @@ else
 	endif
 endif
 
-map <leader>v :tabe ~/.vimrc<CR>
+map <leader>v :tabe ~/.vim/init.vim<CR>
 
 set tags+=./tags
 highlight PmenuSel ctermbg=4
