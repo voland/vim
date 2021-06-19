@@ -1,4 +1,4 @@
-let mapleader = ";"
+let mapleader = "g"
 
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -34,7 +34,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-nnoremap <silent> <leader> :WhichKey ';'<CR>
+nnoremap <silent> <leader> :WhichKey 'g'<CR>
 
 "    _    _     _____ 
 "   / \  | |   | ____|
@@ -67,7 +67,7 @@ map <Leader>n :NERDTreeToggle<CR>
 "##############################################################
 set rtp+=~/sdb/src/.fzf
 map <Leader>ft :Tags<CR>
-map <Leader>fm :Commands<CR>
+map <Leader>fc :Commands<CR>
 map <Leader>ff :Files<CR>
 map <Leader>fb :Buffers<CR>
 map <Leader>fl :BLines<CR>
