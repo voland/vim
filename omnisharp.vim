@@ -33,10 +33,10 @@ augroup omnisharp_commands
   autocmd CursorHold *.cs OmniSharpTypeLookup
 
   " The following commands are contextual, based on the cursor position.
-  autocmd FileType cs nmap <silent> <buffer> gd <Plug>(omnisharp_go_to_definition)
-  autocmd FileType cs nmap <silent> <buffer> <Leader>ofu <Plug>(omnisharp_find_usages)
-  autocmd FileType cs nmap <silent> <buffer> <Leader>ofi <Plug>(omnisharp_find_implementations)
-  autocmd FileType cs nmap <silent> <buffer> <Leader>opd <Plug>(omnisharp_preview_definition)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>d <Plug>(omnisharp_go_to_definition)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>lr <Plug>(omnisharp_find_usages)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>li <Plug>(omnisharp_find_implementations)
+  autocmd FileType cs nmap <silent> <buffer> K <Plug>(omnisharp_preview_definition)
   autocmd FileType cs nmap <silent> <buffer> <Leader>opi <Plug>(omnisharp_preview_implementations)
   autocmd FileType cs nmap <silent> <buffer> <Leader>ot <Plug>(omnisharp_type_lookup)
   autocmd FileType cs nmap <silent> <buffer> <Leader>od <Plug>(omnisharp_documentation)
@@ -57,9 +57,9 @@ augroup omnisharp_commands
   autocmd FileType cs nmap <silent> <buffer> <Leader>o. <Plug>(omnisharp_code_action_repeat)
   autocmd FileType cs xmap <silent> <buffer> <Leader>o. <Plug>(omnisharp_code_action_repeat)
 
-  autocmd FileType cs nmap <silent> <buffer> <Leader>o= <Plug>(omnisharp_code_format)
+  " autocmd FileType cs nmap <silent> <buffer> <Leader>lf <Plug>(omnisharp_code_format)
 
-  autocmd FileType cs nmap <silent> <buffer> <Leader>or <Plug>(omnisharp_rename)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>ln <Plug>(omnisharp_rename)
 
   " autocmd FileType cs nmap <silent> <buffer> <Leader>ore <Plug>(omnisharp_restart_server)
   autocmd FileType cs nmap <silent> <buffer> <Leader>ost <Plug>(omnisharp_start_server)
@@ -67,7 +67,7 @@ augroup omnisharp_commands
 augroup END
 
 " Enable snippet completion, using the ultisnips plugin
-autocmd FileType cs nnoremap <leader>kf :OmniSharpCodeFormat<cr>
+autocmd FileType cs nnoremap <leader>lf :OmniSharpCodeFormat<cr>
 
 let g:OmniSharp_want_snippet=1
 let g:OmniSharp_highlighting = 0

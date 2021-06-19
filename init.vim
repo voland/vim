@@ -97,3 +97,8 @@ map <space> <Plug>(easymotion-prefix)
 
 source ~/.vim/other.vim
 source ~/.vim/omnisharp.vim
+
+if has('win32')
+set pythonthreedll=C:\Users\arek\AppData\Local\Programs\Python\Python38\python38.dll
+set pythonthreehome=C:\Users\arek\AppData\Local\Programs\Python\Python38\
+endif

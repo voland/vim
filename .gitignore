@@ -4,3 +4,6 @@ plugged-back/*
 coc.nvim/
 
 plugin/a.vim
+.init.vim.swp
+.omnisharp.vim.swp
+.coc.vim.swp

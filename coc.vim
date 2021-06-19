@@ -114,7 +114,7 @@ omap ac <Plug>(coc-classobj-a)
 " nmap <leader>ln <Plug>(coc-rename)
 nmap <leader>ln :ALERename<cr>
 " GoTo code navigation.
-nmap <silent> <leader>ld <Plug>(coc-definition)
+nmap <silent> <leader>d <Plug>(coc-definition)
 nmap <silent> <leader>ly <Plug>(coc-type-definition)
 nmap <silent> <leader>li <Plug>(coc-implementation)
 nmap <silent> <leader>lr <Plug>(coc-references)
