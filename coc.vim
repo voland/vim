@@ -98,7 +98,7 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " provide custom statusline: lightline.vim, vim-airline.
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
-map <Leader>ls :CocSearch <C-R>=expand("<cword>")<CR><CR><CR>
+map <Leader>cs :CocSearch <C-R>=expand("<cword>")<CR><CR><CR>
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
 xmap if <Plug>(coc-funcobj-i)
@@ -114,13 +114,14 @@ omap ac <Plug>(coc-classobj-a)
 " nmap <leader>ln <Plug>(coc-rename)
 nmap <leader>ln :ALERename<cr>
 " GoTo code navigation.
-nmap <silent> <leader>d <Plug>(coc-definition)
-nmap <silent> <leader>ly <Plug>(coc-type-definition)
+nmap <silent> <leader>ld <Plug>(coc-definition)
+nmap <silent> <leader>lc <Plug>(coc-declaration)
+" nmap <silent> <leader>ly <Plug>(coc-type-definition)
 nmap <silent> <leader>li <Plug>(coc-implementation)
 nmap <silent> <leader>lr <Plug>(coc-references)
 " Use `[g` and `]g` to navigate diagnostics
-nmap <leader>le <Plug>(coc-diagnostic-prev)
-nmap <leader>lp <Plug>(coc-diagnostic-next)
+nmap <leader>lp <Plug>(coc-diagnostic-prev)
+nmap <leader>le <Plug>(coc-diagnostic-next)
 " Use CTRL-S for selections ranges.
 " Requires 'textDocument/selectionRange' support of LS, ex: coc-tsserver
 nmap <silent> <C-s> <Plug>(coc-range-select)

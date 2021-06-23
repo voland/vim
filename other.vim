@@ -100,7 +100,7 @@ map <C-l> :vertical resize -2<cr>
 map <C-j> :horizotnal resize +2<cr>
 map <C-k> :horizotnal resize -2<cr>
 map <leader>x :!firefox --new-tab https://duckduckgo.com/?q=<C-R>=expand("<cword>")<CR>&t=h_&va=a&ia=web<cr>
-map g; :tag <C-R>=expand("<cword>")<CR><CR>
+map g; :tj <C-R>=expand("<cword>")<CR><CR>
 au BufReadPost,BufNewFile *iso-8859-1.* e ++enc=iso-8859-1
 au BufReadPost,BufNewFile *iso-8859-15.* e ++enc=iso-8859-15
 au BufReadPost,BufNewFile *iso-8859-2.* e ++enc=iso-8859-2
