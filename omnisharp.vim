@@ -33,7 +33,7 @@ augroup omnisharp_commands
   autocmd CursorHold *.cs OmniSharpTypeLookup
 
   " The following commands are contextual, based on the cursor position.
-  autocmd FileType cs nmap <silent> <buffer> <Leader>d <Plug>(omnisharp_go_to_definition)
+  autocmd FileType cs nmap <silent> <buffer> <Leader>ld <Plug>(omnisharp_go_to_definition)
   autocmd FileType cs nmap <silent> <buffer> <Leader>lr <Plug>(omnisharp_find_usages)
   autocmd FileType cs nmap <silent> <buffer> <Leader>li <Plug>(omnisharp_find_implementations)
   autocmd FileType cs nmap <silent> <buffer> K <Plug>(omnisharp_preview_definition)
