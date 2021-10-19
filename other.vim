@@ -76,7 +76,7 @@ highlight PmenuSel ctermbg=4
 highlight TabLineSel ctermbg=4
 syntax on
 set backspace=indent,eol,start "potrzebne aby dzialal backspace od vim 8.2
-" set clipboard=unnamedplus
+set clipboard=unnamedplus
 set completeopt=longest,menuone
 set path+=**/
 set wildmenu
@@ -92,8 +92,17 @@ set bg=dark
 colo gruvbox
 map gP :mak! mth program<cr>
 map gK :mak! mth <cr>
-map <C-n> :cn<cr>
-map <C-p> :cN<cr>
+
+nnoremap Y y$
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap <C-n> :cn<CR>zzzv
+nnoremap <C-p> :cN<CR>zzzv
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+
 map <space>l :!lazygit<cr>
 map <C-h> :vertical resize +2<cr>
 map <C-l> :vertical resize -2<cr>

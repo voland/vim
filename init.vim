@@ -19,6 +19,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/tpope/vim-repeat.git'
 Plug 'https://github.com/liuchengxu/vim-which-key.git'
+Plug 'voldikss/vim-translator'
+
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
 else
@@ -94,6 +96,8 @@ map <space> <Plug>(easymotion-prefix)
 " inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 " imap <c-space> <Plug>(asyncomplete_force_refresh)
 
+"  Translator
+let g:translator_target_lang='pl'
 
 source ~/.vim/other.vim
 source ~/.vim/omnisharp.vim
