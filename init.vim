@@ -96,7 +96,7 @@ map <space> <Plug>(easymotion-prefix)
 " inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 " imap <c-space> <Plug>(asyncomplete_force_refresh)
 
-"  Translator
+"########### Translator ###########
 let g:translator_target_lang='pl'
 
 source ~/.vim/other.vim
