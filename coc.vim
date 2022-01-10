@@ -111,8 +111,8 @@ xmap ac <Plug>(coc-classobj-a)
 omap ac <Plug>(coc-classobj-a)
 " Symbol renaming.
 " done in ALE
-" nmap <leader>ln <Plug>(coc-rename)
-nmap <leader>ln :ALERename<cr>
+" nmap <leader>ln :ALERename<cr>
+nmap <leader>ln <Plug>(coc-rename)
 " GoTo code navigation.
 nmap <silent> <leader>ld <Plug>(coc-definition)
 nmap <silent> <leader>lc <Plug>(coc-declaration)
