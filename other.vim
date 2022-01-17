@@ -6,7 +6,10 @@
 "##############################################################
 " set cursorline
 
-" set guifont=Liberation_Mono:h10:cEASTEUROPE:qDRAFT
+if has('win32')
+set guifont=Liberation_Mono:h10:cEASTEUROPE:qDRAFT
+endif
+
 set number
 set foldcolumn=1
 set go="Lrm"
