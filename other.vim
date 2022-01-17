@@ -6,7 +6,7 @@
 "##############################################################
 " set cursorline
 
-set guifont=Liberation_Mono:h10:cEASTEUROPE:qDRAFT
+" set guifont=Liberation_Mono:h10:cEASTEUROPE:qDRAFT
 set number
 set foldcolumn=1
 set go="Lrm"
@@ -76,7 +76,12 @@ highlight PmenuSel ctermbg=4
 highlight TabLineSel ctermbg=4
 syntax on
 set backspace=indent,eol,start "potrzebne aby dzialal backspace od vim 8.2
+
+if has('win32')
+else
 set clipboard=unnamedplus
+endif
+
 set completeopt=longest,menuone
 set path+=**/
 set wildmenu
