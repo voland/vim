@@ -17,8 +17,8 @@ set go+=m
 
 set hlsearch
 set nowrap
-"encodint
-set fileencodings=utf8-bom,utf-8,iso-8859-2,iso-8859-15,utf-16,ucs-bom,ucs-bom,default,latin1
+"encoding
+set encoding=utf-8
 set cindent
 set shiftwidth=4
 set softtabstop=4
