@@ -121,3 +121,4 @@ map g; :tj <C-R>=expand("<cword>")<CR><CR>
 au BufReadPost,BufNewFile *iso-8859-1.* e ++enc=iso-8859-1
 au BufReadPost,BufNewFile *iso-8859-15.* e ++enc=iso-8859-15
 au BufReadPost,BufNewFile *iso-8859-2.* e ++enc=iso-8859-2
+au BufReadPost,BufNewFile *iso-8859-4.* e ++enc=iso-8859-4
