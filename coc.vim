@@ -127,9 +127,9 @@ nmap <leader>le <Plug>(coc-diagnostic-next)
 nmap <silent> <C-s> <Plug>(coc-range-select)
 xmap <silent> <C-s> <Plug>(coc-range-select)
 
-fu! AutoFormatC()
-	if (stridx(expand('%:p'), "Projekty")>-1)
-		:Format
-	endif
-endfunction
-au BufWrite *.c,*.h :call AutoFormatC()
+" fu! AutoFormatC()
+" 	if (stridx(expand('%:p'), "Projekty")>-1)
+" 		:Format
+" 	endif
+" endfunction
+" au BufWrite *.c,*.h :call AutoFormatC()
