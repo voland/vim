@@ -82,7 +82,7 @@ set backspace=indent,eol,start "potrzebne aby dzialal backspace od vim 8.2
 
 if has('win32')
 else
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 endif
 
 set completeopt=longest,menuone
@@ -114,8 +114,11 @@ inoremap ? ?<c-g>u
 map <space>l :!lazygit<cr>
 map <C-h> :vertical resize +2<cr>
 map <C-l> :vertical resize -2<cr>
-map <C-j> :horizotnal resize +2<cr>
-map <C-k> :horizotnal resize -2<cr>
+" map <C-j> :horizotnal resize +2<cr>
+" map <C-k> :horizotnal resize -2<cr>
+
+map <C-j> :bn<cr>
+map <C-k> :bN<cr>
 map g; :tj <C-R>=expand("<cword>")<CR><CR>zz
 au BufReadPost,BufNewFile *iso-8859-1.* e ++enc=iso-8859-1
 au BufReadPost,BufNewFile *iso-8859-15.* e ++enc=iso-8859-15

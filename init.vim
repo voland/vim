@@ -47,6 +47,8 @@ nnoremap <silent> <leader> :WhichKey ';'<CR>
 " let g:ale_linters = { 'lua': ['luac'] }
 " " Only run linters named in ale_linters settings.
 " let g:ale_linters_explicit = 1
+map ]e :ALENext<CR>
+map [e :ALEPrevious<CR>
 
 source ~/.vim/coc.vim
 "disable linters for c if coc is used
@@ -78,6 +80,8 @@ map <Leader>fL :Lines<CR>
 map <Leader>fw :Windows<CR>
 map <leader>fs :Ag <C-R>=expand("<cword>")<CR><CR>
 map <leader>fg :Ag 
+map <leader>t :read !sgpt --code "
+
 "let g:fzf_action = { 'ctrl-l': 'tab split', 'ctrl-j': 'split', 'ctrl-k': 'vsplit' }
 let g:fzf_layout ={ 'down': '40%'}
 
@@ -105,4 +109,9 @@ source ~/.vim/omnisharp.vim
 if has('win32')
 set pythonthreedll=C:\Users\arek\AppData\Local\Programs\Python\Python38\python38.dll
 set pythonthreehome=C:\Users\arek\AppData\Local\Programs\Python\Python38\
+endif
+" Check if the Session.vim file exists
+if filereadable("Session.vim")
+    " Source the Session.vim file to restore the session
+    source Session.vim
 endif
