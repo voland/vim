@@ -95,9 +95,10 @@ set wildmenu
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 """""" color theme config """""
-let g:gruvbox_contrast_dark = "hard"
-set bg=dark
-colo gruvbox
+" let g:gruvbox_contrast_dark = "hard"
+" set bg=dark
+" colo gruvbox
+colo jellybeans
 map gP :mak! mth program<cr>
 map gK :mak! mth <cr>
 
