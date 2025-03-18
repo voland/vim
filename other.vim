@@ -95,10 +95,10 @@ set wildmenu
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 """""" color theme config """""
-" let g:gruvbox_contrast_dark = "hard"
-" set bg=dark
-" colo gruvbox
-colo jellybeans
+let g:gruvbox_contrast_dark = "hard"
+set bg=dark
+colo gruvbox
+" colo jellybeans
 map gP :mak! mth program<cr>
 map gK :mak! mth <cr>
 
@@ -125,6 +125,7 @@ au BufReadPost,BufNewFile *iso-8859-1.* e ++enc=iso-8859-1
 au BufReadPost,BufNewFile *iso-8859-15.* e ++enc=iso-8859-15
 au BufReadPost,BufNewFile *iso-8859-2.* e ++enc=iso-8859-2
 au BufReadPost,BufNewFile *iso-8859-4.* e ++enc=iso-8859-4
+au BufReadPost,BufNewFile *cp1251.* e ++enc=cp1251
 
 if has('win32')
 map <leader>x :!firefox --new-tab https://duckduckgo.com/?q=<C-R>=expand("<cword>")<CR>&t=h_&va=a&ia=web<cr>
